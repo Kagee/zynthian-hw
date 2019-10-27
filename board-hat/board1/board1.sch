@@ -1,0 +1,643 @@
+EESchema Schematic File Version 4
+LIBS:board1-cache
+LIBS:zynthian_allinone-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "15 nov 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 850  7500 0    50   ~ 0
+ID_SD and ID_SC PINS:\nThese pins are reserved for HAT ID EEPROM.\n\nAt boot time this I2C interface will be\ninterrogated to look for an EEPROM\nthat identifes the attached board and\nallows automagic setup of the GPIOs\n(and optionally, Linux drivers).\n\nDO NOT USE these pins for anything other\nthan attaching an I2C ID EEPROM. Leave\nunconnected if ID EEPROM not required.
+$Comp
+L board1-rescue:Mounting_Hole-Mechanical MK1
+U 1 1 5834FB2E
+P 3000 7100
+F 0 "MK1" H 3100 7146 50  0000 L CNN
+F 1 "M2.5" H 3100 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 3000 7100 60  0001 C CNN
+F 3 "" H 3000 7100 60  0001 C CNN
+	1    3000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L board1-rescue:Mounting_Hole-Mechanical MK3
+U 1 1 5834FBEF
+P 3450 7100
+F 0 "MK3" H 3550 7146 50  0000 L CNN
+F 1 "M2.5" H 3550 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 3450 7100 60  0001 C CNN
+F 3 "" H 3450 7100 60  0001 C CNN
+	1    3450 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L board1-rescue:Mounting_Hole-Mechanical MK2
+U 1 1 5834FC19
+P 3000 7400
+F 0 "MK2" H 3100 7446 50  0000 L CNN
+F 1 "M2.5" H 3100 7355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 3000 7400 60  0001 C CNN
+F 3 "" H 3000 7400 60  0001 C CNN
+	1    3000 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L board1-rescue:Mounting_Hole-Mechanical MK4
+U 1 1 5834FC4F
+P 3450 7400
+F 0 "MK4" H 3550 7446 50  0000 L CNN
+F 1 "M2.5" H 3550 7355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 3450 7400 60  0001 C CNN
+F 3 "" H 3450 7400 60  0001 C CNN
+	1    3450 7400
+	1    0    0    -1  
+$EndComp
+Text Notes 3000 6950 0    50   ~ 0
+Mounting Holes
+$Comp
+L zynthian_allinone-rescue:CONN_01X04_MALE CTRL-3
+U 1 1 5919A2E4
+P 1550 3800
+F 0 "CTRL-3" H 1550 4175 50  0000 C CNN
+F 1 "CTRL1" H 1550 3400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 1550 4100 50  0001 C CNN
+F 3 "" H 1550 4100 50  0001 C CNN
+	1    1550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:GND #PWR07
+U 1 1 5919A2E6
+P 4950 3750
+F 0 "#PWR07" H 4950 3500 50  0001 C CNN
+F 1 "GND" H 4950 3600 50  0000 C CNN
+F 2 "" H 4950 3750 50  0001 C CNN
+F 3 "" H 4950 3750 50  0001 C CNN
+	1    4950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:MCP23017 MCP1
+U 1 1 5919A2E7
+P 4450 2950
+F 0 "MCP1" H 4350 3975 50  0000 R CNN
+F 1 "MCP23017" H 4350 3900 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm_Socket_LongPads" H 4500 2000 50  0001 L CNN
+F 3 "" H 4700 3950 50  0001 C CNN
+	1    4450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:GND #PWR06
+U 1 1 5919A2E8
+P 4450 3950
+F 0 "#PWR06" H 4450 3700 50  0001 C CNN
+F 1 "GND" H 4450 3800 50  0000 C CNN
+F 2 "" H 4450 3950 50  0001 C CNN
+F 3 "" H 4450 3950 50  0001 C CNN
+	1    4450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:GND #PWR01
+U 1 1 5919A2EC
+P 1850 2400
+F 0 "#PWR01" H 1850 2150 50  0001 C CNN
+F 1 "GND" H 1850 2250 50  0000 C CNN
+F 2 "" H 1850 2400 50  0001 C CNN
+F 3 "" H 1850 2400 50  0001 C CNN
+	1    1850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:GND #PWR02
+U 1 1 5919A2ED
+P 1850 3500
+F 0 "#PWR02" H 1850 3250 50  0001 C CNN
+F 1 "GND" H 1850 3350 50  0000 C CNN
+F 2 "" H 1850 3500 50  0001 C CNN
+F 3 "" H 1850 3500 50  0001 C CNN
+	1    1850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:GND #PWR03
+U 1 1 5919A2EE
+P 1850 4600
+F 0 "#PWR03" H 1850 4350 50  0001 C CNN
+F 1 "GND" H 1850 4450 50  0000 C CNN
+F 2 "" H 1850 4600 50  0001 C CNN
+F 3 "" H 1850 4600 50  0001 C CNN
+	1    1850 4600
+	1    0    0    -1  
+$EndComp
+Text Label 4950 2550 0    60   ~ 0
+INTB
+Text Label 4950 2650 0    60   ~ 0
+INTA
+$Comp
+L zynthian_allinone-rescue:CONN_01X04_MALE CTRL-2
+U 1 1 5919A47C
+P 1550 2700
+F 0 "CTRL-2" H 1550 3075 50  0000 C CNN
+F 1 "CTRL4" H 1550 2300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 1550 3000 50  0001 C CNN
+F 3 "" H 1550 3000 50  0001 C CNN
+	1    1550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:CONN_01X04_MALE CTRL-4
+U 1 1 5919A47E
+P 1550 4900
+F 0 "CTRL-4" H 1550 5275 50  0000 C CNN
+F 1 "CTRL2" H 1550 4500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 1550 5200 50  0001 C CNN
+F 3 "" H 1550 5200 50  0001 C CNN
+	1    1550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:+5V #PWR05
+U 1 1 5919B9AE
+P 4450 1800
+F 0 "#PWR05" H 4450 1650 50  0001 C CNN
+F 1 "+5V" H 4450 1940 50  0000 C CNN
+F 2 "" H 4450 1800 50  0001 C CNN
+F 3 "" H 4450 1800 50  0001 C CNN
+	1    4450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:GND #PWR08
+U 1 1 5919A2E9
+P 5100 3650
+F 0 "#PWR08" H 5100 3400 50  0001 C CNN
+F 1 "GND" H 5100 3500 50  0000 C CNN
+F 2 "" H 5100 3650 50  0001 C CNN
+F 3 "" H 5100 3650 50  0001 C CNN
+	1    5100 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3650 5100 3650
+Wire Wire Line
+	4950 3350 6050 3350
+Wire Wire Line
+	4950 3250 5900 3250
+Wire Wire Line
+	4450 1800 4450 1850
+Wire Wire Line
+	4950 2150 4950 1850
+Wire Wire Line
+	4450 1850 4950 1850
+Connection ~ 4450 1850
+Wire Wire Line
+	1850 1550 3150 1550
+Wire Wire Line
+	3150 1550 3150 2150
+Wire Wire Line
+	3150 2150 3950 2150
+Wire Wire Line
+	1850 1750 3050 1750
+Wire Wire Line
+	3050 1750 3050 2250
+Wire Wire Line
+	3050 2250 3950 2250
+Wire Wire Line
+	1850 1950 2950 1950
+Wire Wire Line
+	2950 1950 2950 2350
+Wire Wire Line
+	2950 2350 3950 2350
+Wire Wire Line
+	1850 2600 2950 2600
+Wire Wire Line
+	2950 2600 2950 2450
+Wire Wire Line
+	2950 2450 3950 2450
+Wire Wire Line
+	1850 2800 3050 2800
+Wire Wire Line
+	3050 2800 3050 2550
+Wire Wire Line
+	3050 2550 3950 2550
+Wire Wire Line
+	1850 3000 3150 3000
+Wire Wire Line
+	3150 3000 3150 2650
+Wire Wire Line
+	3150 2650 3950 2650
+Wire Wire Line
+	1850 3700 3000 3700
+Wire Wire Line
+	3000 3700 3000 3050
+Wire Wire Line
+	3000 3050 3950 3050
+Wire Wire Line
+	1850 3900 3100 3900
+Wire Wire Line
+	3100 3900 3100 3150
+Wire Wire Line
+	3100 3150 3950 3150
+Wire Wire Line
+	1850 4100 3200 4100
+Wire Wire Line
+	3200 4100 3200 3250
+Wire Wire Line
+	3200 3250 3950 3250
+Wire Wire Line
+	1850 4800 3300 4800
+Wire Wire Line
+	3300 4800 3300 3350
+Wire Wire Line
+	3300 3350 3950 3350
+Wire Wire Line
+	1850 5000 3400 5000
+Wire Wire Line
+	3400 5000 3400 3450
+Wire Wire Line
+	3400 3450 3950 3450
+Wire Wire Line
+	1850 5200 3500 5200
+Wire Wire Line
+	3500 5200 3500 3550
+Wire Wire Line
+	3500 3550 3950 3550
+Text Label 9550 3200 0    60   ~ 0
+INTA
+Text Label 6350 3300 0    60   ~ 0
+INTB
+$Comp
+L zynthian_allinone-rescue:C C1
+U 1 1 591ACB40
+P 5300 2000
+F 0 "C1" H 5325 2100 50  0000 L CNN
+F 1 "100n" H 5325 1900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5338 1850 50  0001 C CNN
+F 3 "" H 5300 2000 50  0001 C CNN
+	1    5300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:GND #PWR010
+U 1 1 591ACD80
+P 5300 2150
+F 0 "#PWR010" H 5300 1900 50  0001 C CNN
+F 1 "GND" H 5300 2000 50  0000 C CNN
+F 2 "" H 5300 2150 50  0001 C CNN
+F 3 "" H 5300 2150 50  0001 C CNN
+	1    5300 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 1850
+Wire Wire Line
+	4450 1850 4450 1950
+Wire Wire Line
+	4950 1850 5300 1850
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even P1
+U 1 1 59AD464A
+P 8000 2400
+F 0 "P1" H 8050 3517 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 8050 3426 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 3150 1450 50  0001 C CNN
+F 3 "~" H 3150 1450 50  0001 C CNN
+	1    8000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1350 1900 1350
+$Comp
+L zynthian_allinone-rescue:CONN_01X04_MALE CTRL-1
+U 1 1 5919A47B
+P 1550 1650
+F 0 "CTRL-1" H 1550 2025 50  0000 C CNN
+F 1 "CTRL3" H 1550 1250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 1550 1950 50  0001 C CNN
+F 3 "" H 1550 1950 50  0001 C CNN
+	1    1550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L zynthian_allinone-rescue:GND #PWR04
+U 1 1 5919A2EB
+P 1900 1350
+F 0 "#PWR04" H 1900 1100 50  0001 C CNN
+F 1 "GND" H 1900 1200 50  0000 C CNN
+F 2 "" H 1900 1350 50  0001 C CNN
+F 3 "" H 1900 1350 50  0001 C CNN
+	1    1900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3400 7700 3550
+Text Label 9350 3400 2    50   ~ 0
+GPIO21(SPI1_SCK)
+Wire Wire Line
+	8300 3400 9350 3400
+Text Label 9350 1800 2    50   ~ 0
+GPIO14(TXD0)
+Text Label 9350 1900 2    50   ~ 0
+GPIO15(RXD0)
+Text Label 9350 2000 2    50   ~ 0
+GPIO18(GEN1)(PWM0)
+Text Label 9350 2200 2    50   ~ 0
+GPIO23(GEN4)
+Text Label 9350 2300 2    50   ~ 0
+GPIO24(GEN5)
+Text Label 9350 2500 2    50   ~ 0
+GPIO25(GEN6)
+Text Label 9350 2600 2    50   ~ 0
+GPIO8(SPI0_CE_N)
+Text Label 9350 2700 2    50   ~ 0
+GPIO7(SPI1_CE_N)
+Text Label 9350 2800 2    50   ~ 0
+ID_SC
+Text Label 9350 3000 2    50   ~ 0
+GPIO12(PWM0)
+Text Label 9350 3200 2    50   ~ 0
+GPIO16
+Text Label 9350 3300 2    50   ~ 0
+GPIO20(SPI1_MOSI)
+Text Label 6650 3300 0    50   ~ 0
+GPIO26
+Text Label 6650 3200 0    50   ~ 0
+GPIO19(SPI1_MISO)
+Text Label 6650 3100 0    50   ~ 0
+GPIO13(PWM1)
+Text Label 6650 3000 0    50   ~ 0
+GPIO6
+Text Label 6650 2900 0    50   ~ 0
+GPIO5
+Text Label 6650 2800 0    50   ~ 0
+ID_SD
+Text Label 6650 2600 0    50   ~ 0
+GPIO11(SPI0_SCK)
+Text Label 6650 2500 0    50   ~ 0
+GPIO9(SPI0_MISO)
+Text Label 6650 2400 0    50   ~ 0
+GPIO10(SPI0_MOSI)
+Text Label 6650 2200 0    50   ~ 0
+GPIO22(GEN3)
+Text Label 6650 2100 0    50   ~ 0
+GPIO27(GEN2)
+Text Label 6650 2000 0    50   ~ 0
+GPIO17(GEN0)
+Text Label 6650 1800 0    50   ~ 0
+GPIO4(GCLK)
+Text Label 6650 1700 0    50   ~ 0
+GPIO3(SCL1)
+Text Label 6650 1600 0    50   ~ 0
+GPIO2(SDA1)
+Wire Wire Line
+	8300 3000 9350 3000
+Wire Wire Line
+	8300 1800 9350 1800
+Wire Wire Line
+	8300 2000 9350 2000
+Wire Wire Line
+	8300 1900 9350 1900
+Wire Wire Line
+	8300 2300 9350 2300
+Wire Wire Line
+	8300 2200 9350 2200
+Wire Wire Line
+	8300 2600 9350 2600
+Wire Wire Line
+	8300 2500 9350 2500
+Wire Wire Line
+	8300 2800 9350 2800
+Wire Wire Line
+	8300 2700 9350 2700
+Wire Wire Line
+	8300 3300 9350 3300
+Wire Wire Line
+	7800 3100 6650 3100
+Wire Wire Line
+	6650 3000 7800 3000
+Wire Wire Line
+	6650 2900 7800 2900
+Wire Wire Line
+	7800 2800 6650 2800
+Wire Wire Line
+	6650 2600 7800 2600
+Wire Wire Line
+	6650 2500 7800 2500
+Wire Wire Line
+	7800 2400 6650 2400
+Wire Wire Line
+	6650 2200 7800 2200
+Wire Wire Line
+	6650 2100 7800 2100
+Wire Wire Line
+	7800 2000 6650 2000
+Wire Wire Line
+	6650 1800 7800 1800
+$Comp
+L power:+3.3V #PWR013
+U 1 1 580C1BC1
+P 7800 1500
+F 0 "#PWR013" H 7800 1350 50  0001 C CNN
+F 1 "+3.3V" H 7800 1640 50  0000 C CNN
+F 2 "" H 7800 1500 50  0000 C CNN
+F 3 "" H 7800 1500 50  0000 C CNN
+	1    7800 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 3400 7800 3400
+$Comp
+L power:GND #PWR015
+U 1 1 580C1E01
+P 7700 3550
+F 0 "#PWR015" H 7700 3300 50  0001 C CNN
+F 1 "GND" H 7700 3400 50  0000 C CNN
+F 2 "" H 7700 3550 50  0000 C CNN
+F 3 "" H 7700 3550 50  0000 C CNN
+	1    7700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5DBDF87D
+P 8600 3100
+F 0 "#PWR021" H 8600 2850 50  0001 C CNN
+F 1 "GND" H 8600 2950 50  0000 C CNN
+F 2 "" H 8600 3100 50  0000 C CNN
+F 3 "" H 8600 3100 50  0000 C CNN
+	1    8600 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5DBE0184
+P 8600 2900
+F 0 "#PWR020" H 8600 2650 50  0001 C CNN
+F 1 "GND" H 8600 2750 50  0000 C CNN
+F 2 "" H 8600 2900 50  0000 C CNN
+F 3 "" H 8600 2900 50  0000 C CNN
+	1    8600 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5DBE082E
+P 8600 2400
+F 0 "#PWR019" H 8600 2150 50  0001 C CNN
+F 1 "GND" H 8600 2250 50  0000 C CNN
+F 2 "" H 8600 2400 50  0000 C CNN
+F 3 "" H 8600 2400 50  0000 C CNN
+	1    8600 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5DBE1EAA
+P 8600 2100
+F 0 "#PWR018" H 8600 1850 50  0001 C CNN
+F 1 "GND" H 8600 1950 50  0000 C CNN
+F 2 "" H 8600 2100 50  0000 C CNN
+F 3 "" H 8600 2100 50  0000 C CNN
+	1    8600 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5DBE3492
+P 8300 1700
+F 0 "#PWR017" H 8300 1450 50  0001 C CNN
+F 1 "GND" H 8300 1550 50  0000 C CNN
+F 2 "" H 8300 1700 50  0000 C CNN
+F 3 "" H 8300 1700 50  0000 C CNN
+	1    8300 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 2400 8600 2400
+Wire Wire Line
+	8300 2900 8600 2900
+Wire Wire Line
+	8300 3100 8600 3100
+$Comp
+L power:GND #PWR012
+U 1 1 5DBFF8F7
+P 7500 2700
+F 0 "#PWR012" H 7500 2450 50  0001 C CNN
+F 1 "GND" H 7500 2550 50  0000 C CNN
+F 2 "" H 7500 2700 50  0000 C CNN
+F 3 "" H 7500 2700 50  0000 C CNN
+	1    7500 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR014
+U 1 1 5DC02D14
+P 7800 2300
+F 0 "#PWR014" H 7800 2150 50  0001 C CNN
+F 1 "+3.3V" H 7800 2440 50  0000 C CNN
+F 2 "" H 7800 2300 50  0000 C CNN
+F 3 "" H 7800 2300 50  0000 C CNN
+	1    7800 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5DC03E67
+P 7450 1900
+F 0 "#PWR011" H 7450 1650 50  0001 C CNN
+F 1 "GND" H 7450 1750 50  0000 C CNN
+F 2 "" H 7450 1900 50  0000 C CNN
+F 3 "" H 7450 1900 50  0000 C CNN
+	1    7450 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 1900 7800 1900
+Wire Wire Line
+	7500 2700 7800 2700
+Wire Wire Line
+	8300 3200 9550 3200
+Wire Wire Line
+	6350 3300 7800 3300
+Wire Wire Line
+	5900 1700 7800 1700
+Wire Wire Line
+	6050 1600 7800 1600
+Wire Wire Line
+	5900 3250 5900 1700
+Wire Wire Line
+	6050 3350 6050 1600
+$Comp
+L power:+5V #PWR016
+U 1 1 5DCBBDB4
+P 8300 1600
+F 0 "#PWR016" H 8300 1450 50  0001 C CNN
+F 1 "+5V" V 8315 1728 50  0000 L CNN
+F 2 "" H 8300 1600 50  0001 C CNN
+F 3 "" H 8300 1600 50  0001 C CNN
+	1    8300 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5DCBC673
+P 8300 1500
+F 0 "#PWR0101" H 8300 1350 50  0001 C CNN
+F 1 "+5V" V 8315 1628 50  0000 L CNN
+F 2 "" H 8300 1500 50  0001 C CNN
+F 3 "" H 8300 1500 50  0001 C CNN
+	1    8300 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L zynthian_allinone-rescue:GND #PWR09
+U 1 1 5919A2EA
+P 5250 3550
+F 0 "#PWR09" H 5250 3300 50  0001 C CNN
+F 1 "GND" H 5250 3400 50  0000 C CNN
+F 2 "" H 5250 3550 50  0001 C CNN
+F 3 "" H 5250 3550 50  0001 C CNN
+	1    5250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3550 5250 3550
+Wire Wire Line
+	7800 3200 6650 3200
+Wire Wire Line
+	8300 2100 8600 2100
+NoConn ~ 8300 1800
+NoConn ~ 8300 1900
+NoConn ~ 8300 2000
+NoConn ~ 8300 2200
+NoConn ~ 8300 2300
+NoConn ~ 8300 2500
+NoConn ~ 8300 2600
+NoConn ~ 8300 2700
+NoConn ~ 8300 2800
+NoConn ~ 8300 3000
+NoConn ~ 8300 3300
+NoConn ~ 8300 3400
+NoConn ~ 7800 3200
+NoConn ~ 7800 3100
+NoConn ~ 7800 3000
+NoConn ~ 7800 2900
+NoConn ~ 7800 2800
+NoConn ~ 7800 2600
+NoConn ~ 7800 2500
+NoConn ~ 7800 2400
+NoConn ~ 7800 2200
+NoConn ~ 7800 2100
+NoConn ~ 7800 2000
+NoConn ~ 7800 1800
+$EndSCHEMATC

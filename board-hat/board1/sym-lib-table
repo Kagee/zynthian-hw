@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name board1-rescue)(type Legacy)(uri ${KIPRJMOD}/board1-rescue.lib)(options "")(descr ""))
+  (lib (name zynthian_allinone-rescue)(type Legacy)(uri /home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_allinone/zynthian_allinone-rescue.lib)(options "")(descr ""))
+  (lib (name aaa)(type Legacy)(uri /home/hildenae/Dokumenter/Kildekode/zynthian-hw/board-hat/board1/Connector_Generic2.lib)(options "")(descr ""))
+)

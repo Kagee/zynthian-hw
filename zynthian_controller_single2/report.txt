@@ -1,0 +1,20 @@
+Info: Backing up file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/sym-lib-table" to file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/rescue-backup/sym-lib-table-2019-10-27-11-38-55".
+Info: Backing up file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/zynthian_controller_single2.sch" to file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/rescue-backup/zynthian_controller_single2-2019-10-27-11-38-55.sch".
+Info: Backing up file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/zynthian_controller_single2.pro" to file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/rescue-backup/zynthian_controller_single2-2019-10-27-11-38-55.pro".
+Info: Backing up file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/zynthian_controller_single2-cache.lib" to file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/rescue-backup/zynthian_controller_single2-cache-2019-10-27-11-38-55.lib".
+Info: Backing up file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/zynthian_controller_single2-rescue.lib" to file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/rescue-backup/zynthian_controller_single2-rescue-2019-10-27-11-38-55.lib".
+Info: Backing up file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/zynthian_controller_single2-rescue.dcm" to file "/home/hildenae/Dokumenter/Kildekode/zynthian-hw/zynthian_controller_single2/rescue-backup/zynthian_controller_single2-rescue-2019-10-27-11-38-55.dcm".
+Info: Adding library "zynthian_controller_single2-rescue", file "${KIPRJMOD}/zynthian_controller_single2-rescue.lib" to project symbol library table.
+Symbol "Rotary_Encoder_Switch" mapped to symbol library "zynthian_controller_single2-rescue".
+Symbol "C_Small" mapped to symbol library "zynthian_controller_single2-rescue".
+Symbol "CONN_01X04" mapped to symbol library "zynthian_controller_single2-rescue".
+Symbol "GND" mapped to symbol library "power".
+Symbol "C_Small" mapped to symbol library "zynthian_controller_single2-rescue".
+Symbol "C_Small" mapped to symbol library "zynthian_controller_single2-rescue".
+Symbol "GND" mapped to symbol library "power".
+Symbol "GND" mapped to symbol library "power".
+Symbol "GND" mapped to symbol library "power".
+Symbol "GND" mapped to symbol library "power".
+Symbol "GND" mapped to symbol library "power".
+Symbol "PWR_FLAG" mapped to symbol library "power".
+Info: Symbol library table mapping complete!
